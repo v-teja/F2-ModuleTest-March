@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     
     //age validity check
-
     const ageRegex = /^\d*$/;
     if (!ageRegex.test(age)) {
       alert("Please enter a valid age");
+      return;
     }
 
     //degree validity check
@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
       newStudent.ID = id;
       studentsArray.push(newStudent);
     } else if(submitBtnText==="Edit Student"){
-
       newStudent.ID = submitBtn.id;
       studentsArray[newStudent.ID - 1] = newStudent;
     // Reset the button text content to "Add Student"
@@ -118,8 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const row = event.target.closest("tr");
       // Get the ID of the corresponding student
       const studentID = row.id;
-      const index = studentsArray.indexOf(studentID);
-      studentsArray.splice(index, 1);
+      studentsArray.splice(studentID - 1, 1);
       displayStudents(studentsArray);
     }
   });
