@@ -1,0 +1,45 @@
+label{
+    color: white;
+}
+input{
+    color: white;
+}
+.container{
+    margin-top: 30px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 30px;
+}
+input::placeholder{
+    color: gray !important;
+}
+.btn-xl {
+    padding: 0.5rem 10rem !important;
+    font-size: 1rem !important;
+    line-height: 2.5rem;
+    border-radius: 0.5rem !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+.btn-xl:hover{
+    background-color: lemonchiffon !important;
+}
+td, th {
+    border: 1px solid white !important;
+    padding: 1rem !important;
+}
+
+.searchBtn{
+    background-color: white !important;
+    color: black !important;
+}
+.searchBtn:hover{
+    background-color: lemonchiffon !important;
+}
+
+
+  
